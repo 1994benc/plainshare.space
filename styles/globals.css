@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,500;0,900;1,200;1,500;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    @apply font-thin;
+}
+
+.button {
+    @apply font-medium px-3 py-2 bg-black border border-black text-white rounded-lg tracking-wider hover:text-yellow-200 flex items-center gap-2 justify-center;
+}
+
+.icon-button {
+    @apply px-2 py-3 hover:opacity-100 opacity-25 transition-all ease-in-out;
+}
