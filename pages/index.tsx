@@ -3,8 +3,12 @@ import Head from "next/head";
 import Link from "next/link";
 import MainLayout from "../components/layouts/MainLayout";
 import BigHeader from "../components/texts/BigHeader";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../lib/firebase";
 
 const Home: NextPage = () => {
+  const [user, loading, error] = useAuthState(auth);
+
   return (
     <div>
       <Head>
