@@ -1,4 +1,5 @@
-import { signInWithGoogle } from "../../services/auth/signInWithGoogle";
+import { logInWithGitHub } from "../../services/auth/logInWithGithub";
+import { logInWithGoogle } from "../../services/auth/logInWithGoogle";
 
 export function LogInOptions() {
     return (
@@ -19,10 +20,10 @@ export function LogInOptions() {
                 </svg>
                 <div>Log in options</div>
             </h3>
-            <button onClick={signInWithGoogle} className="button">
+            <button onClick={logInWithGoogle} className="button">
                 With Google
             </button>
-            <button className="button">With GitHub</button>
+            <button onClick={logInWithGitHub} className="button">With GitHub</button>
         </div>
     );
 }
