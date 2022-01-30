@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
       <MainLayout>
         <>
-          <BigHeader>Welcome to PlainShare.Space</BigHeader>
+          <BigHeader>Welcome to PlainShare{user ? ', ' + (user.displayName || user.email) : null}</BigHeader>
           <p className="my-10 text-4xl leading-relaxed font-medium">
             Share plain content with the world, or use your own branding.
           </p>

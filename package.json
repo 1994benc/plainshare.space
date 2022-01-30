@@ -9,6 +9,7 @@
     "start:firebase": "firebase emulators:start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.3",
     "firebase": "^9.6.5",
     "next": "12.0.9",
     "react": "17.0.2",
